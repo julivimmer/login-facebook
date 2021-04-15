@@ -1,0 +1,367 @@
+@charset "utf-8";
+/*Adiciona uma fonte local*/
+@font-face {
+    font-family: 'FacebookLetterFaces';
+    src: url('../fonte-logo/converted-files/FacebookLetterFaces.woff2') format('woff2');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Muda a cor da selecao de texto*/
+::selection {
+    color: #ffffff;
+    background: #8B9CD3;
+}
+
+/*Configs e customizacoes do corpo em geral*/
+body{
+    width: 100%;
+    text-align:center;
+    background: linear-gradient(#fff, #F0F2F5) no-repeat;
+    font-family: 'Average Sans', sans-serif;
+    font-size: 25px;
+}
+
+/*~~~~Aqui começa o menu~~~~*/
+
+/*O fundo do menu geral*/
+#header{
+    width: 100%;
+    min-width: 980px;
+    height: 90px;
+    background: linear-gradient(#4E69A2, #3B5998) no-repeat;
+}
+
+/*Menu de logo/login*/
+#menu{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/*Logo do menu "facebook"*/
+#menu h1{
+    width: 450px;
+    height: inherit;
+    font-family: 'FacebookLetterFaces';
+    font-size: 30px;
+    font-weight: normal;
+    color: #fff;
+    text-align: start;
+    float: left;
+    margin: 25px auto;
+}
+
+/*Customizacao Logo-link "facebook" do menu - Se estivesse acionado redicionaria para a pagina inicial*/
+#menu a{
+    text-decoration: none;
+    color:#fff;
+}
+
+/*Tira o estilo de lista e faz com que o login e senha flutuem a esquerda*/
+#menu li{
+    list-style-type: none;
+    float: left;
+    text-align: left;
+    color: #fff;
+    font-size: 13px;
+    margin-left: 15px;
+}
+
+/*Resposavel pelo posicionamento do formulario login e senha*/
+#menu form{
+    margin-top: 15px; 
+    float: right;
+}
+
+/*Tira o sublinhado do link - Esqueceu a senha?*/
+#menu form li a{
+    text-decoration: none;
+}
+
+/*Quando o mouse passa por cima do link, adiciona o sublinhado novamente e muda sua cor*/
+#menu form li a:hover {
+    color:#DFE3EE; 
+    text-decoration: underline;
+}
+
+/*Customizacao e posicionamento dos botoes email/senha/entrar*/
+#menu form input[type="text"]{
+    margin: 3px -3px;
+    width: 150px;
+    border: 1px solid #08298A;
+    height: 20px;
+    padding-left: 10px;
+    border-radius: 15px;
+}
+
+#menu form input[type="password"]{
+    margin: 3px -3px;
+    width: 150px;
+    border: 1px solid #08298A;
+    height: 20px;
+    padding-left: 10px;
+    border-radius: 15px;
+}
+
+#menu form input[type="submit"]{
+    height: 30px;
+    width: 70px;
+    margin-top: 20px;
+    background-color: #3B5998;
+    color:#fff;
+    border: 2px solid #8B9CD3;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+/*Quando o mouse passa por cima do botao Entrar, ele muda a cor de fundo*/
+#menu form input[type="submit"]:hover{
+    background-color: #2C4170;
+}
+
+/*Quando o botao Matenha me conectado é marcado, cria uma borda colorida em volta; e (apenas no chrome) muda a cor de fundo*/
+input[type="checkbox"]:checked{
+    box-shadow: 0 0 0 2px rgb(89, 0, 255);
+}
+
+/*!!!!Aqui acaba o menu!!!!*/
+
+/*Configs gerais do corpo onde estao as div frase/imagem e formulario*/
+
+#body{
+    width: 980px;
+    margin: 0 auto;
+}
+
+
+#body div{
+    float: left;
+}
+
+/*~~~~Aqui começa a div 1~~~~*/
+
+/*Configs. do corpo da frase e imagem*/
+#body #texto-e-imagem{
+    margin-top: 30px;
+    width: 490px;
+    text-align: left;
+}
+
+/*Customizacao da frase acima da imagem*/
+#body #texto-e-imagem p{
+    font-size: 20px;
+    color: #2C4170;
+    margin: 0px; /*?*/
+}
+
+/*Configs. da imagem*/
+img{
+    height: 490px;
+    width: 490px;
+    margin-top: 20px;
+}
+
+/*!!!!Aqui acaba a div 1!!!!*/
+
+/*~~~~Aqui começa a div 2~~~~~*/
+
+/*Configs. do corpo de cadastro*/
+#body #cadastro{
+    text-align: left;
+    margin: 10px -130px;
+    width: 490px;
+    float: right;
+}
+
+/*Customiza o titulo Cadastre-se*/
+#body #cadastro h2{
+    margin-top: 20px;
+    font-size: 30px;
+    color: #2C4170;
+}
+
+/*Customiza a frase "É gratuito e sempre será."*/
+#body #cadastro p{
+    font-size: 20px;
+    color:#2C4170;
+}
+
+/*Retira o estilo de lista do formulario de cadastro abaixo*/
+#body #cadastro li{
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+/*Customizacao do botao nome*/
+#body #cadastro li #nome{
+    width: 190px;
+    box-shadow: 1px 1px rgba(89, 0, 255, 0.74);
+    border: 1px solid rgb(189, 189, 189);
+    padding: 5px;
+    border-radius:5px;
+
+}
+
+/*Customizacao do botao sobrenome*/
+#body #cadastro li #sobrenome{
+    margin-left: 2%;
+    width: 190px;
+    box-shadow: 1px 1px rgba(89, 0, 255, 0.74);
+    border: 1px solid rgb(189, 189, 189);
+    padding: 5px;
+    border-radius:5px;
+
+}
+
+/*Customizacao dos botoes de email/confirme seu email*/
+#body #cadastro li input[type="email"]{
+    width: 402px;
+    box-shadow: 1px 1px rgba(89, 0, 255, 0.74);
+    border: 1px solid rgb(189, 189, 189);
+    padding: 5px;
+    border-radius:5px;
+
+}
+
+/*Customizacao do botao de senha*/
+#body #cadastro li input[type="password"]{
+    width: 402px;
+    box-shadow: 1px 1px rgba(89, 0, 255, 0.74);
+    border: 1px solid rgb(189, 189, 189);
+    padding: 5px;
+    border-radius:5px;
+}
+
+/*Customizacao do texto "Data de aniversario"*/
+#body #cadastro #data{
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/*Customizacao do botao de data*/
+#body #cadastro input[type="date"]{
+    width: 402px;
+    box-shadow: 1px 1px rgba(89, 0, 255, 0.74);
+    border: 1px solid rgb(189, 189, 189);
+    padding: 5px;
+    border-radius:5px;
+    cursor: pointer;
+}
+
+/*Customizacao do texto de termos de uso do usuario*/
+#body #cadastro #termos{
+    font-size: 13px;
+    color: #2C4170;
+    font-weight: bold;
+}
+
+/*Customizacao dos links de termo de uso do usuario*/
+#body #cadastro #termos a{
+    margin-left: 5px;
+    text-decoration: none;
+    color: #4E69A2;
+    font-weight: 900;
+    line-height: 15px;
+}
+
+/*Quando o mouse estiver em cima dos links de termos de uso do usuario, o link ficara grifado*/
+#body #cadastro #termos a:hover{
+    text-decoration: underline;
+}
+
+/*Configuracoes e customizacoes do botao Cadastre-se*/
+#body #cadastro li input[type="submit"]{
+    margin-top: 15px; 
+    width: 201px;
+    height: 45px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold !important;
+    background: linear-gradient(#67ae55, #578843);
+    box-shadow: inset 0 1px 1px #a4e388;
+    border-color: #3b6e22 #3b6e22 #2c5115;
+    border: 1px solid;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-shadow: 0 1px 2px rgba(0,0,0,.5);
+}
+
+/*Quando o mouse estiver em cima do botao Cadastre-se, a cor do texto muda*/
+#body #cadastro li input[type="submit"]:hover{
+    color: #d0ffbc;
+}
+
+/*!!!!Aqui acaba a div2!!!!*/
+
+/*~~~~Começo dos botoes genero customizados~~~~*/
+
+/* O container, texto indicando o significado de cada botao */
+.container {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    margin: 15px 10px;
+    cursor: pointer;
+    font-size: 15px;
+    user-select: none;
+  }
+  
+  /* Esconde o botao radius padrao do navegador */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Cria o botao radius customizado */
+  .checkmark {
+    position: absolute;
+    top: -9px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+    margin-top: 10px;
+  }
+  
+  /* Quando o mouse estiver em cima do botao adiciona um fundo cinza  */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* Adiciona uma cor de fundo quando o botao é clicado */
+  .container input:checked ~ .checkmark {
+    background-color: rgba(89, 0, 255);
+  }
+  
+  /* Cria a bolinha (escondida qnd nao esta clicada) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Para mostrar a bolinha qnd clicada */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Customiza e posiciona a bolinha de dentro da bolinha */
+  .container .checkmark:after {
+    top: 7px;
+    left: 7px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: white;
+  }
+
+  /*Fim dos botoes genero costumizado*/
+
+  /* :~D zuzi */

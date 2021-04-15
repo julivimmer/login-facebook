@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'FacebookLetterFaces';
+  src: url('FacebookLetterFaces.eot');
+  src: url('FacebookLetterFaces.eot?#iefix') format('embedded-opentype'),
+       url('FacebookLetterFaces.svg#FacebookLetterFaces') format('svg'),
+       url('FacebookLetterFaces.ttf') format('truetype'),
+       url('FacebookLetterFaces.woff') format('woff'),
+       url('FacebookLetterFaces.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
